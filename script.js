@@ -1,25 +1,24 @@
-// var, let and const
+// function greet() {
+//   console.log('Hello!');
+// }
 
-// var name; // Declaring a variable
-// name = 'zeno'; // assigning a value
+// Function Expression
+// const greet = function () {
+//   console.log('Hello!!');
+// };
 
-// var name = 'zeno';
-// var name = 'john';
+// Arrow Function
+// const greet = () => {
+//   console.log('Hello!!!');
+// };
 
-// console.log(name);
+// const greet = () => console.log('Hello!!!');
+// greet();
 
-// let
-// Cannot be redeclare
-// let name;
-// name = 'zero';
-// name = 'one';
+// const double = (number) => {
+//   return number * 2;
+// };
 
-// console.log(name);
+const double = (number) => number * 2;
 
-// const
-// Cannot be redeclare
-// Cannot be reassigned
-
-const name = 'hero';
-
-console.log(name);
+console.log(double(2));
