@@ -3,9 +3,10 @@ import HelloWorld from './components/HelloWorld';
 
 const App = () => {
   return (
-    <div>
+    <div className="hello" id="hello-one">
       <HelloWorld />
     </div>
   );
 };
+
 export default App;
