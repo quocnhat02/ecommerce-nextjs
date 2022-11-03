@@ -1,4 +1,5 @@
 import React from 'react';
+import HelloWorld from './components/HelloWorld';
 
 const App = () => {
   return (
@@ -7,9 +8,4 @@ const App = () => {
     </div>
   );
 };
-
-const HelloWorld = () => {
-  return <h1>Hello World</h1>;
-};
-
 export default App;
