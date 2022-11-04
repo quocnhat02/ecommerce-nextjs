@@ -1,17 +1,13 @@
 import React from 'react';
+import User from './User';
 
 const HelloWorld = () => {
-  const name = 'Nhat';
-  const age = 20;
-  //   const person = {
-  //     name: 'Saitama',
-  //   };
-
   return (
     <div>
-      <h1>{name}</h1>
-      <h2>I am {age} years old</h2>
-      <h2>{Math.floor(Math.random() * 100)}</h2>
+      <h1>List of Users</h1>
+      <User name="Nhat" job="Developer" />
+      <User name="John" job="Cleaner" />
+      <User name="Sarah" job="Baker" />
     </div>
   );
 };
