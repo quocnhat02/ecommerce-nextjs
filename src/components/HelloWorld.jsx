@@ -5,7 +5,7 @@ const HelloWorld = () => {
   return (
     <div>
       <h1>List of Users</h1>
-      <User name="Nhat" job="Developer" />
+      <User />
       <User name="John" job="Cleaner" />
       <User name="Sarah" job="Baker" />
     </div>
