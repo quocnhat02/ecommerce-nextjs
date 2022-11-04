@@ -3,7 +3,7 @@ import HelloWorld from './components/HelloWorld';
 
 const App = () => {
   return (
-    <div className="hello" id="hello-one">
+    <div>
       <HelloWorld />
     </div>
   );
