@@ -7,41 +7,44 @@ import {
   AiOutlineGooglePlus,
 } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
+import Card from '../UI/card/Card';
 
 const Profile = () => {
   return (
-    <div className={styles.profile}>
-      <img src={profile1} alt="" />
-      <div className={styles['profile-content']}>
-        <h3>My Profile</h3>
-        <div className={styles.text}>
-          <p>Name:</p>
-          <p>Adaora Nwodo</p>
-        </div>
-        <div className={styles.text}>
-          <p>Job:</p>
-          <p>Cloud Engineer</p>
-        </div>
-        <div className={styles.text}>
-          <p>Company:</p>
-          <p>Microsoft</p>
-        </div>
-
-        <IconContext.Provider value={{ color: '#666', size: '20px' }}>
-          <div className={styles.icons}>
-            <AiOutlineTwitter />
-            <AiOutlineGithub />
-            <AiOutlineGooglePlus />
+    <Card>
+      <div className={styles.profile}>
+        <img src={profile1} alt="" />
+        <div className={styles['profile-content']}>
+          <h3>My Profile</h3>
+          <div className={styles.text}>
+            <p>Name:</p>
+            <p>Adaora Nwodo</p>
           </div>
-        </IconContext.Provider>
+          <div className={styles.text}>
+            <p>Job:</p>
+            <p>Cloud Engineer</p>
+          </div>
+          <div className={styles.text}>
+            <p>Company:</p>
+            <p>Microsoft</p>
+          </div>
 
-        <div className={styles.btn}>
-          <a href="#" target="_blank" rel="noreferrer">
-            View Profile
-          </a>
+          <IconContext.Provider value={{ color: '#666', size: '20px' }}>
+            <div className={styles.icons}>
+              <AiOutlineTwitter />
+              <AiOutlineGithub />
+              <AiOutlineGooglePlus />
+            </div>
+          </IconContext.Provider>
+
+          <div className={styles.btn}>
+            <a href="#" target="_blank" rel="noreferrer">
+              View Profile
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </Card>
   );
 };
 
