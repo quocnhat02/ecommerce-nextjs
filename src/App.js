@@ -1,8 +1,10 @@
 import React from 'react';
+import UseState from './components/UseState';
+
 const App = () => {
   return (
     <div>
-      <h1>App</h1>
+      <UseState />
     </div>
   );
 };
