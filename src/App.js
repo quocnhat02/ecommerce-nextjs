@@ -1,12 +1,12 @@
 import React from 'react';
-import Events from './components/Events';
-import HelloWorld from './components/HelloWorld';
+import ProfileList from './components/profile/ProfileList';
+import { AiOutlineGithub } from 'react-icons/ai';
 
 const App = () => {
   return (
     <div>
-      <Events />
-      {/* <HelloWorld /> */}
+      <ProfileList />
+      <AiOutlineGithub />
     </div>
   );
 };
