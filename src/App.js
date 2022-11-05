@@ -1,12 +1,10 @@
 import React from 'react';
-import Events from './components/Events';
-import HelloWorld from './components/HelloWorld';
+import ProfileList from './components/profile/ProfileList';
 
 const App = () => {
   return (
     <div>
-      <Events />
-      {/* <HelloWorld /> */}
+      <ProfileList />
     </div>
   );
 };

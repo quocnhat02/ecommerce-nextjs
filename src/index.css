@@ -1,32 +1,5 @@
 * {
-  background: rgb(38, 71, 221);
-  color: #fff;
-}
-
-h1 {
-  text-align: center;
-}
-
-/* .user {
-  border: 1px solid #777;
-  border-radius: 3px;
-  margin: 10px;
-  padding: 10px;
-} */
-
-.card {
-  border: 1px solid #777;
-  border-radius: 3px;
-  margin: 10px;
-  padding: 10px;
-}
-
-.btn {
-  font-size: 16px;
-  background-color: rgb(227, 96, 20);
-  color: #fff;
-  padding: 10px 15px;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
