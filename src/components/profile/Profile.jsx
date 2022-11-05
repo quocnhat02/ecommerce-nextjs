@@ -6,6 +6,7 @@ import {
   AiOutlineGithub,
   AiOutlineGooglePlus,
 } from 'react-icons/ai';
+import { IconContext } from 'react-icons';
 
 const Profile = () => {
   return (
@@ -26,11 +27,13 @@ const Profile = () => {
           <p>Microsoft</p>
         </div>
 
-        <div className={styles.icons}>
-          <AiOutlineTwitter color="#666" size={20} />
-          <AiOutlineGithub color="#666" size={20} />
-          <AiOutlineGooglePlus color="#666" size={20} />
-        </div>
+        <IconContext.Provider value={{ color: '#666', size: '20px' }}>
+          <div className={styles.icons}>
+            <AiOutlineTwitter />
+            <AiOutlineGithub />
+            <AiOutlineGooglePlus />
+          </div>
+        </IconContext.Provider>
 
         <div className={styles.btn}>
           <a href="#" target="_blank" rel="noreferrer">
