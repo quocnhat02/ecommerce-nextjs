@@ -27,7 +27,7 @@ const Counter = () => {
   return (
     <section className="--flex-center --100vh --bg-primary">
       <div className="container --bg-light --p2 --m2 --center-all">
-        <h2>React Page</h2>
+        <h2>React Counter App</h2>
         <h1 style={{ color }}>{count}</h1>
         <div className="buttons --flex-center">
           <button className="--btn --btn-danger" onClick={handleSubtract}>
