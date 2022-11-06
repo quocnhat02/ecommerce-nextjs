@@ -6,7 +6,7 @@ const UseStateArray = () => {
   const [people, setPeople] = useState(peopleData);
 
   const removePerson = (id) => {
-    const newPeople = peopleData.filter((person) => person.id !== id);
+    const newPeople = people.filter((person) => person.id !== id);
 
     setPeople(newPeople);
   };
@@ -15,7 +15,7 @@ const UseStateArray = () => {
     <section className="--flex-center --100vh --bg-primary">
       <div className="container">
         <h1 className="--color-white">UseState in Array</h1>
-        {peopleData.map((person) => {
+        {people.map((person) => {
           const { id, name } = person;
           return (
             <div key={id} className="--flex-between --bg-light --my --card">
