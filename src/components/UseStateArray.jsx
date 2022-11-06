@@ -1,12 +1,28 @@
 import { useState } from 'react';
+import { peopleData } from '../people-data';
+import { BiTrash } from 'react-icons/bi';
 
 const UseStateArray = () => {
-  const [people, setPeople] = useState([]);
+  const [people, setPeople] = useState(peopleData);
 
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <section className="--flex-center --100vh --bg-primary">
+      <div className="container">
+        <h1 className="--color-white">UseState in Array</h1>
+        {peopleData.map((person) => {
+          const { id, name } = person;
+          return (
+            <div key={id} className="--flex-between --bg-light --my --card">
+              <h2>{name}</h2>
+              <BiTrash color="red" size={22} />
+            </div>
+          );
+        })}
+        <button className="--btn --btn-danger" onClick={() => setPeople([])}>
+          Clear All
+        </button>
+      </div>
+    </section>
   );
 };
 
