@@ -4,7 +4,7 @@ const Counter = () => {
   const [count, setCount] = useState(0);
 
   const handleSubtract = () => {
-    setCount(count - 1);
+    setCount((count) => count - 1);
   };
 
   const handleReset = () => {
@@ -12,7 +12,7 @@ const Counter = () => {
   };
 
   const handleAdd = () => {
-    setCount(count + 1);
+    setCount((count) => count + 1);
   };
 
   return (
