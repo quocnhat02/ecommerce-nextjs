@@ -1,10 +1,10 @@
 import React from 'react';
-import UseStateArray from './components/UseStateArray';
+import UseStateObject from './components/UseStateObject';
 
 const App = () => {
   return (
     <div>
-      <UseStateArray />
+      <UseStateObject />
     </div>
   );
 };
