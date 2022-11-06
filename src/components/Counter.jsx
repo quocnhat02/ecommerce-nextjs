@@ -15,11 +15,20 @@ const Counter = () => {
     setCount((count) => count + 1);
   };
 
+  let color = '#444';
+  if (count >= 1) {
+    color = 'blue';
+  } else if (count < 0) {
+    color = 'red';
+  } else {
+    color = '#444';
+  }
+
   return (
     <section className="--flex-center --100vh --bg-primary">
       <div className="container --bg-light --p2 --m2 --center-all">
         <h2>React Page</h2>
-        <h1>{count}</h1>
+        <h1 style={{ color }}>{count}</h1>
         <div className="buttons --flex-center">
           <button className="--btn --btn-danger" onClick={handleSubtract}>
             Subtract
