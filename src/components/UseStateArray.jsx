@@ -5,6 +5,12 @@ import { BiTrash } from 'react-icons/bi';
 const UseStateArray = () => {
   const [people, setPeople] = useState(peopleData);
 
+  const removePerson = (id) => {
+    const newPeople = peopleData.filter((person) => person.id !== id);
+
+    setPeople(newPeople);
+  };
+
   return (
     <section className="--flex-center --100vh --bg-primary">
       <div className="container">
@@ -14,7 +20,7 @@ const UseStateArray = () => {
           return (
             <div key={id} className="--flex-between --bg-light --my --card">
               <h2>{name}</h2>
-              <BiTrash color="red" size={22} />
+              <BiTrash color="red" size={22} onClick={() => removePerson(id)} />
             </div>
           );
         })}
