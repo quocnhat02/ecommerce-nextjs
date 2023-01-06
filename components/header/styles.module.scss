@@ -32,7 +32,7 @@
         display: flex;
         gap: 15px;
 
-        li {
+        .li {
             position: relative;
             display: flex;
             align-items: center;
@@ -110,10 +110,11 @@
 
 // MENU---------------------------------------------------
 .menu {
-    width: 280px;
-    box-shadow: $shadow-1;
     position: absolute;
-    top: 100%;
+    width: 280px;
+    min-height: 200px;
+    box-shadow: $shadow-1;
+    top: 125%;
     right: 0;
     background: #fff;
     z-index: 99;
@@ -129,7 +130,40 @@
     .flex {
         display: flex !important;
         gap: 10px !important;
-        width: 100%;
+        // width: 100%;
         padding: 0 1rem;
+    }
+
+    ul {
+        li {
+            height: 30px;
+
+            a {
+                width: 100%;
+                padding-left: 1rem !important;
+            }
+
+            &:hover {
+                background: #eee;
+            }
+        }
+    }
+
+    &__img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            &:last-of-type {
+                font-size: 14px;
+                color: $blue-color;
+                text-decoration: underline;
+            }
+        }
     }
 }
