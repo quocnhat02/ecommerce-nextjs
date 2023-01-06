@@ -1,5 +1,6 @@
-$blue-color: #2f82ff;
-$grey-color: #f8f8f8;
+$blue-color: #1ca9fbf6;
+$green-color: #3ac6af;
+$grey-color: #f7f7f7;
 $shadow-1: rgba(99, 99, 99, .2) 0px 2px 8px 0px;
 
 .btn_primary {
@@ -8,7 +9,7 @@ $shadow-1: rgba(99, 99, 99, .2) 0px 2px 8px 0px;
     justify-content: center;
     gap: 5px;
     background: $blue-color;
-    color: #fff;
+    color: $grey-color;
     font-weight: 600;
     cursor: pointer;
     width: 100%;
@@ -20,8 +21,8 @@ $shadow-1: rgba(99, 99, 99, .2) 0px 2px 8px 0px;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    background: $grey-color;
-    color: $blue-color;
+    background: $green-color;
+    color: $grey-color;
     font-weight: 600;
     cursor: pointer;
     width: 100%;
